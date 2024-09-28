@@ -1,21 +1,10 @@
-import { Header } from "./components/Header/Header"
-import { List } from "./components/List/List"
-import { Main } from "./components/Main/Main"
+
+import { MainRoutes } from "./routes/routes"
+
 
 
 function App() {
-  const addItem=(name)=>{
-    console.log("pokemon",name)
-  }
-
-  return (
-    <>
-    <Header title="Home" />
-    <Main>
-      <List/>
-    </Main>
-    </>
-  )
+    return <MainRoutes/>
 }
 
 export default App

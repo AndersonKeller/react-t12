@@ -6,12 +6,12 @@ const api = axios.create({
 })
 export async function getPokemons(){
     const res = await api.get("/")
-    console.log(res)
+   
     return res.data
 }
 export async function getPokemonInfo(name=""){
 
     const res = await api.get(name)
-    console.log(res)
+   
     return res.data
 }
